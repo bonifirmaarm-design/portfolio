@@ -21,6 +21,6 @@
 | Цена | блок `price-num` и строки в `hero-note` / футере |
 | Проценты предоплаты | секция `#process` |
 | Новый кейс | скопировать блок `<article class="case">` внутри `#works` |
-| Ссылки на сайты | `bonifirmaarm-design.github.io/auto-website/` и `.../flowers/` |
+| Ссылки на сайты | `bonifirmaarm-design.github.io/` + `mebel/`, `auto-website/`, `flowers/` |
 
 Все изображения — `webp`, шрифты подключены локально из `assets/fonts`, внешних зависимостей у страницы нет.
