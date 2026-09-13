@@ -198,6 +198,25 @@ a.hi:hover b{color:var(--brass)}
 .hero-note i{font-style:normal;color:var(--t3)}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
 
+/* Десктоп: содержимое первого экрана собрано в один массив внизу.
+   Список проектов уходит под кнопки и раскладывается в две колонки,
+   поэтому он больше не висит отдельным островом.
+   Узких экранов это правило не касается — там порядок прежний. */
+@media (min-width:901px){
+  .hero{min-height:80svh;padding-block:100px clamp(32px,5vh,56px)}
+  .hero-in{justify-content:flex-end}
+  .hero-word{order:1}
+  .hero-grid{order:2;margin-top:clamp(20px,3vh,38px)}
+  .hero-index{
+    order:3;align-self:stretch;width:100%;
+    margin:clamp(30px,5vh,60px) 0 0;
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:clamp(20px,3vw,48px);row-gap:0;
+  }
+  .hero-index-t{grid-column:1/-1;padding-bottom:8px}
+  .hi{border-bottom:1px solid var(--line-2)}
+}
+
 /* ─────────────────────────────────────────────
    СЦЕНА — работы наезжают на заголовок
    ───────────────────────────────────────────── */
